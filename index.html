@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball Animation</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .ball-container {
+            position: relative;
+            width: 100px;
+            height: 200px;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: #ff5733;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-150px);
+            }
+            60% {
+                transform: translateY(-75px);
+            }
+        }
+
+        .message {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .message p {
+            font-size: 1.2em;
+        }
+
+        .message em {
+            color: #ff5733;
+            font-style: normal;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="ball-container">
+        <div class="ball"></div>
+    </div>
+    <div class="message">
+        <p>Why do programmers prefer dark mode?</p>
+        <p>Because <em>light</em> attracts bugs! 🐛</p>
+    </div>
+</body>
+</html>
