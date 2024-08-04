@@ -10,3 +10,6 @@ quote = f"{random.choice(subjects)} {random.choice(verbs)} {random.choice(object
 
 print("Here's your random inspirational quote:")
 print(quote)
+
+#justPlayingAround
+print("Boom")
